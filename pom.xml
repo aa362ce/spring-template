@@ -54,7 +54,7 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>${jackson.databind.version}</version>
 		</dependency>
-		
+
 		<!-- Servlet -->
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
@@ -133,7 +133,7 @@
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty.version}</version>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
