@@ -19,11 +19,17 @@
 		<jackson.version>1.9.13</jackson.version>
 		<jackson.databind.version>2.4.1</jackson.databind.version>
 		<dbh2.version>1.4.191</dbh2.version>
-		<bootstrap.version>4.0.0-alpha.2</bootstrap.version>
-		<jquery.version>3.0.0-alpha1</jquery.version>
+		<bootstrap.version>3.3.7</bootstrap.version>
+		<jquery.version>1.12.4</jquery.version>
 		<jetty.version>9.3.7.v20160115</jetty.version>
 		<tomcat.maven.plugin>2.2</tomcat.maven.plugin>
 		<maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
+		<opencsv.version>2.3</opencsv.version>
+		<jstl.version>1.2</jstl.version>
+		<jstl.api.version>1.2</jstl.api.version>
+		<jsp.api.version>2.1</jsp.api.version>
+		<tomcat.servlet.api.version>7.0.30</tomcat.servlet.api.version>
+		<webjar.locator.version>0.1</webjar.locator.version>
 	</properties>
 
 	<dependencies>
@@ -59,19 +65,19 @@
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-servlet-api</artifactId>
-			<version>7.0.30</version>
+			<version>${tomcat.servlet.api.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
-			<version>2.1</version>
+			<version>${jsp.api.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp.jstl</groupId>
 			<artifactId>jstl-api</artifactId>
-			<version>1.2</version>
+			<version>${jstl.api.version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.servlet</groupId>
@@ -82,13 +88,19 @@
 		<dependency>
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>jstl-impl</artifactId>
-			<version>1.2</version>
+			<version>${jstl.version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.servlet</groupId>
 					<artifactId>servlet-api</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator</artifactId>
+			<version>${webjar.locator.version}</version>
 		</dependency>
 
 		<!-- BootStrap web jar -->
@@ -105,6 +117,12 @@
 			<version>${jquery.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>tether</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+
 		<!-- Embeded database - Replace with appropriatae db dependency -->
 		<!-- H2 DB -->
 		<dependency>
@@ -116,7 +134,7 @@
 		<dependency>
 			<groupId>net.sf.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
-			<version>2.3</version>
+			<version>${opencsv.version}</version>
 		</dependency>
 
 
