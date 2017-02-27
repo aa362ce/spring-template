@@ -13,7 +13,8 @@
 	<link rel='stylesheet' href='<%= org.webjars.AssetLocator.getWebJarPath("css/bootstrap.min.css") %>' type="text/css"/>
 	<link rel='stylesheet' href='<%= org.webjars.AssetLocator.getWebJarPath("css/tether.min.css") %>' type="text/css">
     <link rel='stylesheet' href="<c:url value="/resources/assets/css/ie10-viewport-bug-workaround.css" />" type="text/css" />
-	<link rel='stylesheet' href="<c:url value="/resources/css/cover.css" />"  type="text/css" />	
+	<link rel='stylesheet' href="<c:url value="/resources/assets/css/cover.css" />"  type="text/css" />	
+	<link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
 </head>
 <body>
     <div class="site-wrapper">
@@ -21,34 +22,39 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
+			<nav class="navbar navbar-default" style="margin:0px;background-color:#000">
+				<div class="container-fluid" >
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">My Website</a>
+					</div>
+					<span class="pull-right" style="padding:15px"><a href="#">logout</a></span>
+				</div>
+			</nav>
+			
+			<!-- main container for tabs and right menu -->
+			<div class="container-fluid">
+				<div>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Menu 1</a></li>
+						<li><a href="#">Menu 2</a></li>
+						<li><a href="#">Menu 3</a></li>
+					</ul>
+				</div>
+				<div class="cover" style="background-color:#fff">
+				hello
+				</div>
+			</div>
+			<!-- End of main container -->
+		
+		  <!-- footer begins -->
           <div class="mastfoot">
             <div class="inner">
               <p>spring template <a href="http://spring.io">spring</a></p>
             </div>
           </div>
-
+          <!-- end of footer -->
+          
         </div>
 
       </div>
@@ -57,6 +63,8 @@
     <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("jquery.min.js") %>'></script>
     <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("js/tether.min.js") %>'></script>
     <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("js/bootstrap.min.js") %>'></script>
+    <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("angular.min.js") %>'></script>
+    <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("angular-route.min.js") %>'></script>
     <script type='text/javascript' src="<c:url value="/resources/assets/js/ie-emulation-modes-warning.js" />" ></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script type='text/javascript' src="<c:url value="/resources/assets/js/ie10-viewport-bug-workaround.js" />" ></script>

@@ -51,6 +51,7 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  height:100%;
 }
 
 /* Padding for spacing */
@@ -158,6 +159,5 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
   }
 }

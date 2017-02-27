@@ -19,6 +19,7 @@
 		<jackson.version>1.9.13</jackson.version>
 		<jackson.databind.version>2.4.1</jackson.databind.version>
 		<dbh2.version>1.4.191</dbh2.version>
+		<angular.version>1.6.2</angular.version>
 		<bootstrap.version>3.3.7</bootstrap.version>
 		<jquery.version>1.12.4</jquery.version>
 		<jetty.version>9.3.7.v20160115</jetty.version>
@@ -97,11 +98,20 @@
 			</exclusions>
 		</dependency>
 	
+		<!-- Web jar locator library -->
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator</artifactId>
 			<version>${webjar.locator.version}</version>
 		</dependency>
+		
+		<!-- AngularJs web jar -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>angularjs</artifactId>
+		    <version>${angular.version}</version>
+		</dependency>
+		
 
 		<!-- BootStrap web jar -->
 		<dependency>
