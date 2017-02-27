@@ -41,5 +41,4 @@ public class FileSlicer {
 			ex.printStackTrace();
 		}
 	}
-
 }

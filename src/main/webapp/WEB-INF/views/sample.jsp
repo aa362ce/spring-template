@@ -10,16 +10,10 @@
     <meta name="author" content="Ashish Bhatt">
 	<title>Spring Template</title>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link rel='stylesheet' href='<%= org.webjars.AssetLocator.getWebJarPath("css/bootstrap.min.css") %>' type="text/css"/>
+	<link rel='stylesheet' href='<%= org.webjars.AssetLocator.getWebJarPath("css/tether.min.css") %>' type="text/css">
     <link rel='stylesheet' href="<c:url value="/resources/assets/css/ie10-viewport-bug-workaround.css" />" type="text/css" />
 	<link rel='stylesheet' href="<c:url value="/resources/css/cover.css" />"  type="text/css" />	
-	<link rel='stylesheet' href='<%= org.webjars.AssetLocator.getWebJarPath("css/bootstrap.min.css") %>'>
-	<link rel='stylesheet' href='<%= org.webjars.AssetLocator.getWebJarPath("css/tether.min.css") %>'>
-	<script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("jquery.min.js") %>'></script>
-    <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("js/tether.min.js") %>'></script>
-    <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("js/bootstrap.min.js") %>'></script>
-    <script type='text/javascript' src="<c:url value="/resources/assets/js/ie-emulation-modes-warning.js" />" ></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script type='text/javascript' src="<c:url value="/resources/assets/js/ie10-viewport-bug-workaround.js" />" ></script>
 </head>
 <body>
     <div class="site-wrapper">
@@ -51,7 +45,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>spring template <a href="http://spring.io">spring</a></p>
             </div>
           </div>
 
@@ -60,5 +54,11 @@
       </div>
 
     </div>
+    <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("jquery.min.js") %>'></script>
+    <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("js/tether.min.js") %>'></script>
+    <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("js/bootstrap.min.js") %>'></script>
+    <script type='text/javascript' src="<c:url value="/resources/assets/js/ie-emulation-modes-warning.js" />" ></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script type='text/javascript' src="<c:url value="/resources/assets/js/ie10-viewport-bug-workaround.js" />" ></script>
 </body>
 </html>
