@@ -7,4 +7,9 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+<<<<<<< HEAD
 .DS_Store
+=======
+.*
+!/.gitignore
+>>>>>>> ba4b8ab17bfc3be6b3563eccb8a5d34296b5c90f
